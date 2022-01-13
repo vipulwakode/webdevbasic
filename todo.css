@@ -1,0 +1,26 @@
+h1 {
+  text-decoration: underline;
+  text-shadow: 2px 2px red;
+}
+body {
+  background-color: darkblue;
+}
+#ima {
+  background-image: url("mustdo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  border: 12px solid black;
+  padding-bottom: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 30px;
+  text-align: center;
+}
+#ourlist {
+  text-align: center;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}

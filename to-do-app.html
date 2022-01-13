@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> To-Do-App</title>
+<link rel="stylesheet" href="todo.css">
+</head>
+<body>
+<div id="ima" >
+<h1> Task-Monitor</h1>
+<form id="ourform">
+<input id="ourField" type="text" autocomplete="off">
+<button> <b>Write Your Task </b></button>
+</form>
+<center><h3> Need To Do </h3></center>
+<ul id="ourlist">
+ 
+</ul>
+<div>
+<script>
+let ourForm= document.getElementById("ourform")
+let ourField= document.getElementById("ourField")
+let ourlist = document.getElementById("ourlist")
+ourForm.addEventListener("submit",(e)=>{
+e.preventDefault()
+createItem(ourField.value)
+})
+function createItem(x){
+let ourHTML =`<li>${x} <button onclick="deleteItem(this)" id="del" > Delete </button></li>`
+ourlist.insertAdjacentHTML("beforeend",ourHTML)
+ourField.value=""
+ourField.focus()
+}
+function deleteItem(elementTOdelet){
+elementTOdelet.parentElement.remove()
+}
+</script>
+</body>
+</html>
+              
+
+
+
+
+			     
